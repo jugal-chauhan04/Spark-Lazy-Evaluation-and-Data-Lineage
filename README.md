@@ -16,6 +16,6 @@ The shift from Hadoop to Spark by many organizations can be attributed to the de
 
 ## What is Data Lineage ?
 
-Lazy evaluation not only allows us to design a logical plan of transformations for data but also ensures that this plan is executed only when an action is initiated. The logical sequence of transformations forms a lineage for the DataFrame, empowering Spark to efficiently recompose any partition at any given moment. By reproducing all the previous operations on the same input data, Spark seamlessly maintains a clear path from raw input to final output.  
+Lazy evaluation not only allows us to design a logical plan of transformations for data but also ensures that this plan is executed only when an action is initiated. The logical sequence of transformations forms a lineage for the DataFrame, empowering Spark to efficiently recompose any partition at any given moment. By reproducing all the previous operations on the same input data, Spark seamlessly maintains a clear path from raw input to final output. The execution plan takes the form of a directed acyclic graph (DAG) made up of transformations. Each transformation creates a fresh, unchangeable DataFrame, and when we perform an action, it produces the final result.
 
 This functional programming principals form the core of Spark's programming model. When transformations on the data remain constant, the same inputs consistently yield the same outputs. This reliability and traceability, inherent in Spark's data lineage, provide a robust foundation for managing data workflows effectively
