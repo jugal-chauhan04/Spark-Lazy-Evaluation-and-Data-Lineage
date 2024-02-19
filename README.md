@@ -1,3 +1,4 @@
+theme: jekyll-theme-minimal
 # Spark's Lazy Evaluation: Streamlining Data Operations
 
 ## What is Lazy Evaluation in Spark?  
