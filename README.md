@@ -1,5 +1,6 @@
-# Spark-s-Lazy-Evaluation-and-Data-Lineage
+# Spark's Lazy Evaluation: Streamlining Data Operations
 
+## What is Lazy Evaluation in Spark?  
 
 Lazy Evaluation in Spark is an approach where the execution of operations is postponed until their results are explicitly needed. In simpler terms, when you instruct Spark to perform operations on your data, it doesn't execute them right away. Instead, it notes down the tasks and patiently waits until you explicitly request the final result by triggering an action.
 
